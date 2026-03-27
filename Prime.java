@@ -12,7 +12,7 @@ public class Prime {
         } else {
             System.out.println("Not a Prime Number");
         }
-    
+    sc.close();
 }
 public static boolean isPrime(int n) {
     if(n < 2){
