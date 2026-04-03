@@ -1,3 +1,16 @@
+/* 
+out Put: 
+ Enter How many Columns you want: 6
+ Enter How many Rows you want: 6
+ 
+******
+******
+******
+******
+******
+****** */
+
+
 import java.util.Scanner;
 
 public class Patren1 {
