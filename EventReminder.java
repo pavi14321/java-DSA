@@ -12,21 +12,21 @@ public class EventReminder {
 
         LocalTime reminderTime = LocalTime.parse(inputTime);
 
+        System.out.print("Enter reminder message: ");
+        String message = sc.nextLine();
+
         System.out.println("Reminder set... Waiting ⏳");
 
-        // Loop to check time every second
         while (true) {
             LocalTime currentTime = LocalTime.now();
 
-            if (currentTime.getHour() == reminderTime.getHour() &&
-                currentTime.getMinute() == reminderTime.getMinute() &&
-                currentTime.getSecond() == reminderTime.getSecond()) {
-
-                System.out.println("🔔 Reminder! Time reached!");
+            // Trigger when current time is equal OR passed
+            if (!currentTime.isBefore(reminderTime)) {
+                System.out.println("🔔 Reminder: " + message);
                 break;
             }
 
-            Thread.sleep(1000); // wait 1 second
+            Thread.sleep(1000);
         }
 
         sc.close();
