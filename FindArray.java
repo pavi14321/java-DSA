@@ -15,7 +15,7 @@ public class FindArray {
         System.out.println("Enter The Eliment To Search: ");
         int find = sc.nextInt();
 
-        for(int i = 0; i<size; i++) {
+        for(int i = 0; i < arr.length; i++) {
             if(arr[i] == find) {
                 System.out.println("Element Found At Index: " + i);
                 return;
