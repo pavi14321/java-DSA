@@ -11,8 +11,8 @@ public class javaString {
         // System.out.println();
         // System.out.println(fullname.length());
         String str1 = "hello";
-        String str2 = "hello";
-        if(str1.compareTo(str2) == 0) {
+        String str2 = "hpllo";
+        if(str1 == str2) {
             System.out.println("String are equal");
         }
         else {
