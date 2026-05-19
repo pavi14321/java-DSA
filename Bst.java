@@ -41,7 +41,11 @@ public static boolean search(Node root, int key){
     }
 else {
     return search(root.left, key);
-}    }
+}    
+}
+public static Node delete(Node root, int ley){
+    
+}
 
 
 
