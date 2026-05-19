@@ -5,7 +5,8 @@ public class Hashing {
 
     public static void main(String args[]) {
         HashSet<Integer> set = new HashSet<>();
-        set.add();
+        set.add(1);
+        System.out.println(set.contains(1));
 
     }
     
